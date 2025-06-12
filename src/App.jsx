@@ -1,15 +1,12 @@
-import "./App.css";
-import jobPics from "../src/assets/job.svg";
+// import jobPics from "../src/assets/img/job.svg";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <div>
-        <img src={jobPics} alt="" style={{ width: "300px" }} />
-        <h1 style={{ color: "#fff" }}>
-          <span style={{ color: "#007aff" }}>Job</span>WHiz
-        </h1>
-      </div>
+      <NavBar />
+      <Footer />
     </>
   );
 }
