@@ -1,0 +1,39 @@
+#recent-job {
+  min-height: 10vh;
+  padding: 60px 0;
+}
+
+.recent-job-text {
+  max-width: 450px;
+}
+
+.recent-job-text > h1 {
+  font-family: var(--font-inter);
+  font-size: 35px;
+  font-weight: var(--fw-600);
+  color: #000;
+}
+
+.recent-job-text > p {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: var(--fw-400);
+  color: #000;
+}
+
+.view-all-link > * {
+  font-family: var(--font-inter);
+  font-size: 22px;
+  font-weight: var(--fw-600);
+  color: var(--primary-color);
+  text-decoration: underline !important;
+}
+
+@media screen and (max-width: 768px) {
+  .recent-job-text > h1 {
+    font-size: 34px;
+  }
+  .view-all-link > * {
+    font-size: 20px;
+  }
+}

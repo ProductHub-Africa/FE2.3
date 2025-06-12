@@ -9,7 +9,7 @@ function Footer() {
       <footer id="footer">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-4 col-lg-4 mb-3">
+            <div className="col-12 col-md-6 col-lg-4 mb-3">
               <div className="job-whiz-footer">
                 <h1>Jobwhiz</h1>
                 <p>
@@ -19,51 +19,51 @@ function Footer() {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-2 col-lg-2 mb-3">
+            <div className="col-12 col-md-6 col-lg-2 mb-3">
               <div className="about-links mx-md-auto">
                 <h4>Company</h4>
                 <ul className="ps-0 mt-4">
-                  <li>
+                  <li className="mb-2">
                     <Link to="">About Us</Link>
                   </li>
-                  <li>
+                  <li className="mb-2">
                     <Link to="">Our Team</Link>
                   </li>
-                  <li>
+                  <li className="mb-2">
                     <Link to="">Partners</Link>
                   </li>
-                  <li>
+                  <li className="mb-2">
                     <Link to="">For Candidates</Link>
                   </li>
-                  <li>
+                  <li className="mb-2">
                     <Link to="">For Employers</Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-12 col-md-2 col-lg-2 mb-3">
-              <div className="job-categories-footer mx-md-auto">
+            <div className="col-12 col-md-6 col-lg-2 mb-3">
+              <div className="job-categories-footer mx-md-0 mx-lg-auto">
                 <h4>Job Categories</h4>
                 <ul className="ps-0 mt-4">
-                  <li>
+                  <li className="mb-2">
                     <Link to="">Agriculture</Link>
                   </li>
-                  <li>
+                  <li className="mb-2">
                     <Link to="">Metal Production</Link>
                   </li>
-                  <li>
+                  <li className="mb-2">
                     <Link to="">E-Commerce</Link>
                   </li>
-                  <li>
+                  <li className="mb-2">
                     <Link to="">Transport</Link>
                   </li>
-                  <li>
+                  <li className="mb-2">
                     <Link to="">Hotels & Tourism</Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-4 mb-3">
+            <div className="col-12 col-md-6 col-lg-4 mb-3">
               <div className="newsletter ms-md-auto">
                 <h4>Newsletter</h4>
                 <p className="mt-3">
@@ -86,7 +86,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="copyright-section d-flex align-items-center justify-content-between">
+          <div className="copyright-section d-md-flex align-items-center justify-content-between">
             <p className="copyright-text">
               © Copyright Jobwhiz <span>{currentYear}</span>
             </p>

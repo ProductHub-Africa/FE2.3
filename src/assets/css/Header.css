@@ -1,0 +1,80 @@
+#header {
+  /* background-image: url("../img/landing-icon.svg"); */
+  background-image: url("../img/landing-bg.png");
+  background-repeat: no-repeat;
+  height: 576px;
+}
+
+.content-left {
+  max-width: 540px;
+}
+
+.content-left > h1 {
+  font-family: var(--font-inter);
+  font-size: 40px;
+  font-weight: var(--fw-600);
+}
+
+.content-left > p {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: var(--fw-400);
+}
+
+.search-bar-container {
+  background-color: #fff;
+  padding: 10px 32px; /* Equivalent to p-2 */
+  border-radius: 64px;
+  border: 1px solid rgba(140, 143, 142, 1);
+  /* max-width: 100%; */
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.search-role-input {
+  padding: 0.75rem;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 70%;
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: var(--fw-500);
+}
+
+.separator {
+  height: 2rem;
+  width: 1px;
+  /* background-color: rgba(184, 189, 187, 1); */
+  border-left: 1px solid rgba(184, 189, 187, 1);
+}
+
+.location-input {
+  width: 50%;
+  padding: 0.75rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: var(--fw-500);
+  color: #000;
+}
+
+::placeholder {
+  color: rgba(184, 189, 187, 1);
+}
+
+.search-job-button {
+  background-color: transparent;
+  /* border: 2px solid black; */
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.landing-icon {
+  width: 100%;
+}

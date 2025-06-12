@@ -4,3 +4,7 @@
   outline: none;
   list-style-type: none;
 }
+
+body {
+  overflow-x: hidden !important;
+}
