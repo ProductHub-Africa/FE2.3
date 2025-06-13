@@ -1,0 +1,17 @@
+:root {
+  /* color */
+  --primary-color: rgba(0, 122, 255, 1);
+  --black-color: rgba(29, 30, 29, 1);
+  /* fonts */
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-righteous: "Righteous", sans-serif;
+  --font-figtree: "Figtree", sans-serif;
+  /* font weight */
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+}

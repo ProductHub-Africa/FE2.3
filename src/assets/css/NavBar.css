@@ -1,0 +1,26 @@
+nav {
+  border-bottom: 1px solid rgba(229, 234, 232, 1);
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 32px;
+  font-family: var(--font-righteous);
+  font-weight: var(--fw-400);
+}
+
+.notification-icon,
+.user-icon,
+.nav-profile {
+  cursor: pointer;
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center !important;
+}
+
+.nav-profile p {
+  border-left: 1px solid rgba(184, 189, 187, 1);
+  font-family: var(--font-poppins);
+}

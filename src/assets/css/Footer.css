@@ -1,0 +1,86 @@
+#footer {
+  padding: 100px 0 60px 0;
+  background-color: var(--black-color);
+}
+
+.job-whiz-footer > h1 {
+  font-size: 32px;
+  color: #fff;
+  font-family: var(--font-righteous);
+  font-weight: var(--fw-400);
+}
+
+.job-whiz-footer > p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.about-links,
+.job-categories-footer {
+  width: max-content;
+}
+
+.about-links > h4,
+.job-categories-footer > h4,
+.newsletter > h4 {
+  color: #fff;
+  font-family: var(--font-inter);
+  font-weight: var(--fw-600);
+  font-size: 20px;
+}
+
+.about-links ul li *,
+.job-categories-footer ul li * {
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--font-inter);
+}
+
+.newsletter {
+  width: 350px;
+}
+
+.newsletter > p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-inter);
+  font-size: 16px;
+}
+
+.sub-email-address {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 15px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-family: var(--font-inter);
+}
+
+.subscribe-btn {
+  background-color: var(--primary-color);
+  border-radius: 64px;
+  padding: 17px;
+  border: none;
+  font-family: var(--font-poppins);
+  font-weight: var(--fw-600);
+  font-size: 16px;
+  color: #fff;
+}
+
+.copyright-section {
+  margin-top: 60px;
+}
+
+.copyright-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-inter);
+  font-size: 14px;
+}
+
+.privacy-policy > * {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  text-decoration: underline !important;
+  color: rgba(255, 255, 255, 1);
+  font-weight: var(fw-400);
+}
