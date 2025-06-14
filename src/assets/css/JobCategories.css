@@ -1,0 +1,42 @@
+#job-categories {
+  min-height: 10vh;
+  padding: 60px 0;
+  background-color: rgba(245, 250, 255, 1);
+}
+
+.job-categories-header {
+  max-width: 700px;
+  margin: auto;
+}
+
+.job-cat-list {
+  margin-top: 100px;
+}
+
+.job-categories-header > h1 {
+  font-family: var(--font-inter);
+  font-size: 35px;
+  font-weight: var(--fw-600);
+  color: #000;
+}
+
+.job-categories-header > p {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: var(--fw-500);
+  color: rgba(51, 52, 52, 1);
+}
+
+.job-list-card {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 3px 8px rgba(48, 150, 137, 0.05);
+  border-radius: 20px;
+  height: 280px;
+}
+
+.job-list-title {
+  font-family: var(--font-inter);
+  font-size: 22px;
+  font-weight: var(--fw-600);
+  color: rgba(51, 52, 52, 1);
+}
