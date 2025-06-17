@@ -1,0 +1,49 @@
+{
+  "hash": "2cf6ed05",
+  "configHash": "92f1bb5f",
+  "lockfileHash": "7e1ef163",
+  "browserHash": "ed254b86",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "3fa0d18f",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "2ed0e156",
+      "needsInterop": true
+    },
+    "bootstrap/dist/js/bootstrap.min.js": {
+      "src": "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "file": "bootstrap_dist_js_bootstrap__min__js.js",
+      "fileHash": "8c6f59e5",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "13adc377",
+      "needsInterop": false
+    },
+    "moment": {
+      "src": "../../node_modules/moment/dist/moment.js",
+      "file": "moment.js",
+      "fileHash": "83dd8711",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-CTWCFWG6": {
+      "file": "chunk-CTWCFWG6.js"
+    },
+    "chunk-KHENLHAD": {
+      "file": "chunk-KHENLHAD.js"
+    },
+    "chunk-PLDDJCW6": {
+      "file": "chunk-PLDDJCW6.js"
+    }
+  }
+}

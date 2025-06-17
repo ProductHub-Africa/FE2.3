@@ -1,7 +1,11 @@
 import "../assets/css/Header.css";
 import landingIcon from "../assets/img/landing-icon.svg";
 
-function Header() {
+function Header({ searchTerms }) {
+  const handleSubmit = (e) => {
+    const searchValue = e.target.value;
+    searchTerms(searchValue);
+  };
   return (
     <>
       <header id="header">
@@ -20,6 +24,7 @@ function Header() {
                     type="text"
                     placeholder="search role"
                     className="search-role-input"
+                    onInput={handleSubmit}
                   />
 
                   <div className="d-none d-sm-block separator"></div>

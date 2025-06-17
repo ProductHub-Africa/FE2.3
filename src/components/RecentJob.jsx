@@ -1,12 +1,15 @@
 import "../assets/css/RecentJob.css";
 import { Link } from "react-router-dom";
+import JobCards from "./JobCards";
 
-function RecentJob() {
+function RecentJob({ allJobs, loader }) {
+  const recentJob = allJobs;
+
   return (
     <>
       <section id="recent-job">
         <div className="container">
-          <div className="recent-job-available-block d-md-flex align-items-center justify-content-between">
+          <div className="recent-job-available-block d-md-flex align-items-center justify-content-between mb-4">
             <div className="recent-job-text">
               <h1>Recent jobs available</h1>
               <p>
@@ -16,6 +19,16 @@ function RecentJob() {
             <div className="view-all-link">
               <Link to="#">View all</Link>
             </div>
+          </div>
+          {/* {recentJob} */}
+          {loader && (
+            <div className="spinner-border text-info" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          )}
+
+          <div className="row">
+            <JobCards recentJobs={recentJob} />
           </div>
         </div>
       </section>
