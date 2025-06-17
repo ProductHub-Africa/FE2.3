@@ -5,6 +5,7 @@ import moment from "moment";
 
 function JobCards({ recentJobs }) {
   const job = recentJobs;
+
   return (
     <>
       {job.map((jobList) => (
