@@ -1,0 +1,47 @@
+.job-card {
+  border-radius: 12px;
+  background-color: rgba(247, 247, 247, 1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.brand > span {
+  color: rgba(51, 52, 52, 1);
+  font-family: var(--font-inter);
+  font-weight: var(--fw-600);
+  font-size: 14px;
+}
+
+.time > span {
+  font-size: 14px;
+  color: rgba(118, 121, 119, 1);
+  font-weight: var(--fw-500);
+  font-family: var(--font-poppins);
+}
+
+.job-title {
+  font-weight: var(--fw-600);
+  font-family: var(--font-poppins);
+  font-size: 20px;
+}
+
+.location-name,
+.job-time-text,
+.salary-text {
+  color: rgba(118, 121, 119, 1);
+  font-size: 14px;
+  font-family: var(--font-poppins);
+  font-weight: var(--fw-500);
+}
+
+.apply-btn {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 24px;
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  font-family: var(--font-inter);
+  font-weight: var(--fw-600);
+  color: var(--primary-color);
+}
