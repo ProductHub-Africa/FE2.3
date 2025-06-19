@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import JobCategories from "./components/JobCategories";
 import NavBar from "./components/NavBar";
 import RecentJob from "./components/RecentJob";
-import StartJob from "./components/StartJob";
+// import StartJob from "./components/StartJob";
 
 import { useState } from "react";
 
@@ -20,10 +20,10 @@ function App() {
 
   const fetchJobData = async (query) => {
     const baseURL = query
-      ? `https://remotive.com/api/remote-jobs?limit=10?search=${encodeURIComponent(
+      ? `https://remotive.com/api/remote-jobs?search=${encodeURIComponent(
           query
         )}`
-      : `https://remotive.com/api/remote-jobs?limit=10`;
+      : `https://remotive.com/api/remote-jobs`;
 
     setIsLoading(true);
     try {
@@ -52,7 +52,7 @@ function App() {
       <Header searchTerms={handleSearchTerms} />
       <RecentJob allJobs={jobData} loader={isLoading} />
       <JobCategories />
-      <StartJob />
+      {/* <StartJob /> */}
       <Footer />
     </>
   );

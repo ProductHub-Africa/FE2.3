@@ -37,3 +37,35 @@
     font-size: 20px;
   }
 }
+
+/* PAGINATION STYLING */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  background-color: var(--primary-color);
+  color: white !important;
+}
+.page-link {
+  background-color: yellow;
+  color: #000;
+  font-family: var(--font-inter) !important;
+  font-weight: var(--fw-500);
+}
+.page-item {
+  color: black;
+}
+
+.prev-btn {
+  margin-right: 15px;
+  font-family: var(--font-inter) !important;
+  font-weight: var(--fw-500);
+}
+
+.next-btn {
+  margin-left: 15px;
+  font-family: var(--font-inter) !important;
+  font-weight: var(--fw-500);
+}
