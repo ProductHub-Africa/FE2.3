@@ -14,15 +14,25 @@ function JobCards({ recentJobs }) {
             <div className="brand-n-time d-flex align-items-center justify-content-between">
               <div className="brand">
                 <img
-                  src={jobList.company_logo}
+                  style={
+                    jobList.companyLogo === ""
+                      ? { width: "24px", height: "24px", borderRadius: "50%" }
+                      : { width: "24px", height: "24px", borderRadius: "0" }
+                  }
+                  src={
+                    jobList.companyLogo === ""
+                      ? "https://res.cloudinary.com/dsfc1o1bp/image/upload/c_fill,w_24,h_24/v1727868727/sample.jpg"
+                      : jobList.companyLogo
+                  }
                   alt=""
-                  style={{ width: "24px", height: "24px" }}
                 />
-                <span className="ms-2">{jobList.company_name}</span>
+                <span className="ms-2">{jobList.companyName}</span>
               </div>
               <div className="time">
                 <span>
-                  {moment(jobList.publication_date).startOf("day").fromNow()}
+                  {jobList.datePosted === "invalid date"
+                    ? "No Date"
+                    : moment(jobList.datePosted).startOf("day").fromNow()}
                 </span>
               </div>
             </div>
@@ -50,9 +60,7 @@ function JobCards({ recentJobs }) {
                 </svg>
               </div>
               <div className="location-name">
-                <p className="mb-0 ms-2">
-                  {jobList.candidate_required_location}
-                </p>
+                <p className="mb-0 ms-2">{jobList.jobLocation}</p>
               </div>
             </div>
 
@@ -81,9 +89,9 @@ function JobCards({ recentJobs }) {
               </div>
               <div className="job-time-text">
                 <p className="mb-0 ms-2">
-                  {jobList.job_type === "full_time"
+                  {jobList.jobType === "full_time"
                     ? "Full Time"
-                    : jobList.job_type}
+                    : jobList.jobType}
                 </p>
               </div>
             </div>
@@ -121,12 +129,12 @@ function JobCards({ recentJobs }) {
               </div>
               <div className="salary-text">
                 <p className="mb-0 ms-2">
-                  {jobList.salary === "" ? "N/A" : jobList.salary}
+                  {jobList.jobSalary === "" ? "N/A" : jobList.jobSalary}
                 </p>
               </div>
             </div>
 
-            <Link to={jobList.url}>
+            <Link to={jobList.applyUrl}>
               <button className="apply-btn">Apply</button>
             </Link>
           </div>

@@ -1,0 +1,21 @@
+#no-job-wrapper {
+  height: 465px;
+}
+
+.svg-wrapper {
+  max-width: 300px;
+}
+
+.svg-wrapper > h1 {
+  color: rgba(52, 52, 63, 1);
+  font-family: var(--font-poppins);
+  font-weight: var(--fw-600);
+  font-size: 24px;
+}
+
+p {
+  color: rgba(70, 70, 101, 1);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: var(--fw-400);
+}

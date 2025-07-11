@@ -32,6 +32,7 @@
   font-size: 14px;
   font-family: var(--font-poppins);
   font-weight: var(--fw-500);
+  /* border: 2px solid black; */
 }
 
 .apply-btn {

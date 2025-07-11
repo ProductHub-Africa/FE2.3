@@ -21,8 +21,8 @@ function RecentJob({ allJobs, loader }) {
     const currentItems = recentJob.slice(itemOffset, endOffset);
     setCurrentJob(currentItems);
   }, [itemOffset, itemsPerPage, recentJob]);
-  console.log(`Page count is ${pageCount}`);
-  console.log("current job list", currentJob);
+  // console.log(`Page count is ${pageCount}`);
+  // console.log("current job list", currentJob);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % recentJob.length;

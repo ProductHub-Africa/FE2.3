@@ -1,0 +1,30 @@
+#side-bar {
+  width: 300px;
+  border-radius: 20px;
+  background-color: rgba(247, 247, 247, 1);
+  padding: 20px 10px 20px 20px;
+  height: max-content;
+}
+
+#side-bar > h4 {
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: var(--fw-600);
+}
+
+#side-bar > h3 {
+  color: rgba(29, 30, 29, 1);
+  /* color:#d9d9d9; */
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: var(--fw-600);
+}
+
+.clear-filter-text {
+  color: var(--primary-color);
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: var(--fw-500);
+  text-decoration: underline !important;
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+.long-job-card {
+  background-color: rgba(247, 247, 247, 1);
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+}
+
+.company-name-and-time > .company-name span {
+  font-size: 14px;
+  font-family: var(--font-inter);
+  color: rgba(51, 52, 52, 1);
+  font-weight: var(--fw-600);
+}
+
+.company-name-and-time > .company-name img {
+  width: 24px;
+  height: 24px;
+}
+
+.company-name-and-time > .time span {
+  font-family: var(--font-poppins);
+  color: rgba(118, 121, 119, 1);
+  font-size: 14px;
+}
+
+.long-job-card .job-title > h2 {
+  font-size: 20px;
+  font-weight: var(--fw-600);
+  font-family: var(--font-poppins);
+}
+
+.bottom-content .job-type,
+.job-salary {
+  margin-left: 100px;
+}
+
+.bottom-content .location > span,
+.job-type > span,
+.job-salary > span {
+  /* border: 2px solid black; */
+  color: rgba(118, 121, 119, 1);
+  font-size: 12px;
+  font-family: var(--font-poppins);
+  font-weight: var(--fw-500);
+}
+
+.long-card-apply-btn button {
+  font-family: var(--font-poppins);
+  font-weight: var(--fw-500);
+  font-size: 14px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 24px;
+  color: rgba(255, 255, 255, 1);
+  padding: 10px 30px;
+}

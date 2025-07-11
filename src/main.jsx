@@ -8,6 +8,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SearchPage from "./components/SearchPage.jsx";
+// import Lesson from "./components/Lesson.jsx";
+import SearchResults from "./pages/SearchResults.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/search",
     element: <SearchPage />,
+  },
+  {
+    path: "search-results",
+    element: <SearchResults />,
   },
 ]);
 

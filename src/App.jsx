@@ -6,51 +6,52 @@ import JobCategories from "./components/JobCategories";
 import NavBar from "./components/NavBar";
 import RecentJob from "./components/RecentJob";
 // import StartJob from "./components/StartJob";
+import useJobApiData from "./store/GeneralApi";
 
 import { useState } from "react";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [jobData, setJobData] = useState([]);
   const [roleQuery, setRoleQuery] = useState("");
+  // const []
+  const {
+    isLoading,
+    // jobData,
+    fetchRemotiveJobData,
+    fetchAdzunaJobData,
+    fetchJSearchJobData,
+    getAllJobsData,
+    getAllJobs,
+    // searchKeyword,
+    // setSearchKeyword,
+  } = useJobApiData();
 
   const handleSearchTerms = (query) => {
+    console.log("Search Query:", query);
+    // setSearchKeyword(query);
     setRoleQuery(query);
-  };
+    console.log("Role Query:", query);
 
-  const fetchJobData = async (query) => {
-    const baseURL = query
-      ? `https://remotive.com/api/remote-jobs?search=${encodeURIComponent(
-          query
-        )}`
-      : `https://remotive.com/api/remote-jobs`;
+    // const filteredSearchedJobs = getAllJobsData.filter((job) => {
+    //   const q = query.toLowerCase();
+    //   const matchesTitle = job.title.toLowerCase().includes(q);
 
-    setIsLoading(true);
-    try {
-      const response = await fetch(baseURL);
-      if (!response.ok) {
-        setIsLoading(false);
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      setJobData(data.jobs || []);
-    } catch (error) {
-      console.log(`Check Error`, error);
-    } finally {
-      setIsLoading(false);
-      // setIsLoading(false);
-    }
+    //   return matchesTitle;
+    // });
   };
 
   useEffect(() => {
-    fetchJobData(roleQuery);
+    fetchRemotiveJobData();
+    fetchAdzunaJobData();
+    fetchJSearchJobData();
+    getAllJobs();
+    // console.log("All fucking Jobs", getAllJobsData);
   }, [roleQuery]);
 
   return (
     <>
       <NavBar />
       <Header searchTerms={handleSearchTerms} />
-      <RecentJob allJobs={jobData} loader={isLoading} />
+      <RecentJob allJobs={getAllJobsData} loader={isLoading} />
       <JobCategories />
       {/* <StartJob /> */}
       <Footer />
