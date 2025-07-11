@@ -12,25 +12,23 @@ function SideBar({ filters, onFilterChange }) {
 
   const checkIsAdzunaJob = (e) => {
     onFilterChange({ ...filters, adzuna: e.target.checked });
-    // setIsAdzunaJob(e.target.checked);
-    // localStorage.setItem("IsAdzunaJob", "adzuna");
   };
 
-  const checkIsFullTimeJob = (e) => {
-    onFilterChange({ ...filters, fullTime: e.target.checked });
-  };
+  // const checkIsFullTimeJob = (e) => {
+  //   onFilterChange({ ...filters, fullTime: e.target.checked });
+  // };
 
   // Clear All filter
-  const resetAllFilter = () => {
-    onFilterChange({ ...filters, remotive: false }); // unchecks it
-    onFilterChange({ ...filters, adzuna: false }); // unchecks it
-  };
+  // const resetAllFilter = () => {
+  //   onFilterChange({ ...filters, remotive: false });
+  //   onFilterChange({ ...filters, adzuna: false });
+  // };
 
   return (
     <>
       <aside id="side-bar">
         <h4>Filter Jobs by</h4>
-        <h3 className="mb-3 mt-4">Job Type</h3>
+        {/* <h3 className="mb-3 mt-4">Job Type</h3>
         <div className="remote d-flex align-items-center justify-content-start">
           <input
             type="checkbox"
@@ -58,7 +56,7 @@ function SideBar({ filters, onFilterChange }) {
         <div className="remote d-flex align-items-center justify-content-start">
           <input type="checkbox" className="form-check-input" />
           <span className="ms-2">Part Time</span>
-        </div>
+        </div> */}
         <h3 className="mb-3 mt-4">Source</h3>
         <div className="jsearch d-flex align-items-center justify-content-start">
           <input type="checkbox" className="form-check-input" name="" id="" />
@@ -87,7 +85,7 @@ function SideBar({ filters, onFilterChange }) {
           />
           <span className="ms-2">Remotive</span>
         </div>
-        <h3 className="mb-3 mt-4">Date Posted</h3>
+        {/* <h3 className="mb-3 mt-4">Date Posted</h3>
         <div className="jooble d-flex align-items-center justify-content-start">
           <input type="checkbox" className="form-check-input" name="" id="" />
           <span className="ms-2">All</span>
@@ -108,11 +106,14 @@ function SideBar({ filters, onFilterChange }) {
           <input type="checkbox" className="form-check-input" name="" id="" />
           <span className="ms-2">Last 30 Days</span>
         </div>
-        <h3 className="mb-3 mt-4">Salary</h3>
+        <h3 className="mb-3 mt-4">Salary</h3> */}
 
-        <p className="clear-filter-text text-center" onClick={resetAllFilter}>
+        {/* <p
+          className="clear-filter-text text-center mt-3"
+          onClick={resetAllFilter}
+        >
           Clear All Filter
-        </p>
+        </p> */}
       </aside>
     </>
   );

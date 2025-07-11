@@ -37,9 +37,10 @@ function Header({ searchTerms }) {
                       })}
                     />
 
-                    <div className="d-none d-sm-block separator"></div>
+                    {/* Will later uncomment this after implementation search by location */}
+                    {/* <div className="d-none d-sm-block separator"></div> */}
 
-                    <div className="d-flex align-items-center me-2">
+                    {/* <div className="d-flex align-items-center me-2">
                       <svg
                         className="ms-3"
                         width="18"
@@ -58,7 +59,7 @@ function Header({ searchTerms }) {
                         placeholder="Nigeria"
                         className="location-input"
                       />
-                    </div>
+                    </div> */}
 
                     <button
                       className="search-job-button"
