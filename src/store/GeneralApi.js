@@ -11,12 +11,9 @@ const useJobApiData = () => {
 
   const fetchRemotiveJobData = async () => {
     const baseURL = `https://remotive.com/api/remote-jobs`;
-
-    setIsLoading(true);
     try {
       const response = await fetch(baseURL);
       if (!response.ok) {
-        setIsLoading(true);
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
@@ -25,8 +22,6 @@ const useJobApiData = () => {
     } catch (error) {
       console.log(`Check Error`, error);
       return [];
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -34,11 +29,10 @@ const useJobApiData = () => {
     const baseURL = `https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${
       import.meta.env.VITE_APP_ADZUNA_ID
     }&app_key=${import.meta.env.VITE_APP_ADZUNA_KEY}&results_per_page=10`;
-    setIsLoading(true);
+
     try {
       const response = await fetch(baseURL);
       if (!response.ok) {
-        setIsLoading(true);
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
@@ -48,8 +42,6 @@ const useJobApiData = () => {
     } catch (error) {
       console.error("Error fetching Adzuna job data:", error);
       return [];
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -64,11 +56,9 @@ const useJobApiData = () => {
       },
     };
 
-    setIsLoading(true);
     try {
       const response = await fetch(baseURL, options);
       if (!response.ok) {
-        setIsLoading(true);
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
@@ -78,8 +68,6 @@ const useJobApiData = () => {
     } catch (error) {
       console.error("Error fetching JSearch job data:", error);
       return [];
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -132,25 +120,33 @@ const useJobApiData = () => {
   };
 
   const getAllJobs = async () => {
-    const [remotiveJobDatas, adzunaJobDatas, JSearchJobDatas] =
-      await Promise.allSettled([
-        fetchRemotiveJobData(),
-        fetchAdzunaJobData(),
-        fetchJSearchJobData(),
-      ]).then((result) =>
-        result.map((res) => (res.status === "fulfilled" ? res.value : []))
-      );
+    setIsLoading(true);
+    try {
+      const [remotiveJobDatas, adzunaJobDatas, JSearchJobDatas] =
+        await Promise.allSettled([
+          fetchRemotiveJobData(),
+          fetchAdzunaJobData(),
+          fetchJSearchJobData(),
+        ]).then((result) =>
+          result.map((res) => (res.status === "fulfilled" ? res.value : []))
+        );
 
-    const allJobs = [
-      ...setSchemaForRemotiveJobs(remotiveJobDatas),
-      ...setSchemaForAdzunaJobs(adzunaJobDatas),
-      ...setSchemaforJSearchJobs(JSearchJobDatas),
-    ];
+      const allJobs = [
+        ...setSchemaForRemotiveJobs(remotiveJobDatas),
+        ...setSchemaForAdzunaJobs(adzunaJobDatas),
+        ...setSchemaforJSearchJobs(JSearchJobDatas),
+      ];
 
-    setGetAllJobsData(allJobs);
-    console.log("All JOBS:", allJobs);
+      setGetAllJobsData(allJobs);
+      console.log("All JOBS:", allJobs);
 
-    return allJobs;
+      return allJobs;
+    } catch (error) {
+      setIsLoading(false);
+      return console.error("Error while fetch all jobs: ", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const filteredSearchedJobs = getAllJobsData.filter((job) => {
