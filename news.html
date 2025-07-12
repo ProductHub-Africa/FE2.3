@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let headersList = {
+      //     Accept: "*/*",
+      //     "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      //   };
+
+      //    let response = await fetch("https://newsapi.org/v2/everything?apiKey=f70da3c4e280496c89d760cbeab9475a&q=Tech%20news", {
+      //      method: "GET",
+      //      headers: headersList
+      //    });
+
+      //    let data = await response.text();
+      //    console.log(data);
+
+      // const myHeaders = new Headers();
+      // myHeaders.append("Accept", "application/json");
+      // myHeaders.append("Authorization", "Bearer <token>");
+
+      // const requestOptions = {
+      //   method: "GET",
+      //   headers: myHeaders,
+      //   redirect: "follow",
+      // };
+
+      // let headersList = {
+      //   Accept: "*/*",
+      //   "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      // };
+
+      // async function getNewsData() {
+      //   try {
+      //     let response = await fetch(
+      //       "https://newsapi.org/v2/everything?apiKey=f70da3c4e280496c89d760cbeab9475a&q=Tech%20news",
+      //       {
+      //         method: "GET",
+      //         headers: headersList,
+      //       }
+      //     );
+
+      //     let data = await response.text();
+      //     console.log(data);
+      //   } catch (error) {
+      //     console.error("Error while fetching news data", error);
+      //   }
+      // }
+
+      // getNewsData();
+
+      const requestOptions = {
+        method: "GET",
+        redirect: "follow",
+      };
+
+      fetch(
+        "https://newsapi.org/v2/everything?apiKey=f70da3c4e280496c89d760cbeab9475a&q=Tech%20news",
+        requestOptions
+      )
+        .then((response) => {
+          // response.text();
+          console.log(response.json());
+        })
+        .then((result) => console.log(result))
+        .catch((error) => console.error(error));
+    </script>
+  </body>
+</html>

@@ -1,18 +1,24 @@
-// import { useState } from "react";
 import "../assets/css/SideBar.css";
 
 function SideBar({ filters, onFilterChange }) {
-  // const [isRemotiveJob, setIsRemotive] = useState(false);
-  // const [isAdzunaJob, setIsAdzunaJob] = useState(false);
-
   const checkIsRemotiveJob = (e) => {
     onFilterChange({ ...filters, remotive: e.target.checked });
-    // setIsRemotive(e.target.checked);
   };
 
   const checkIsAdzunaJob = (e) => {
     onFilterChange({ ...filters, adzuna: e.target.checked });
   };
+
+  // useEffect(() => {
+  //   const isRemotive = (e) => {
+  //     if (filters.remotive === true) {
+  //       console.log("Remotive...", filters.remotive);
+  //       return e.target.checked;
+  //     }
+  //   };
+
+  //   isRemotive();
+  // }, []);
 
   // const checkIsFullTimeJob = (e) => {
   //   onFilterChange({ ...filters, fullTime: e.target.checked });

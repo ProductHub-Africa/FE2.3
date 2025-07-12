@@ -138,7 +138,6 @@ const useJobApiData = () => {
       ];
 
       setGetAllJobsData(allJobs);
-      console.log("All JOBS:", allJobs);
 
       return allJobs;
     } catch (error) {

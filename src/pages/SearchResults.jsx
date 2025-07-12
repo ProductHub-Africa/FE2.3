@@ -22,6 +22,22 @@ function SearchResults() {
   const { getAllJobsData, getAllJobs } = useJobApiData();
 
   useEffect(() => {
+    const hasRemotive = getAllJobsData.some((job) => job.source === "Remotive");
+    const hasAdzuna = getAllJobsData.some((job) => job.source === "Adzuna");
+    const hasJSearch = getAllJobsData.some((job) => job.source === "JSearch");
+
+    const totalSources = [hasRemotive, hasAdzuna, hasJSearch].filter(
+      Boolean
+    ).length;
+
+    if (totalSources === 1) {
+      setRemotiveJobOnly(hasRemotive);
+      setAdzunaJobOnly(hasAdzuna);
+      setJSearchJobOnly(hasJSearch);
+    }
+  }, [getAllJobsData]);
+
+  useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
       const filteredSearchedJobs = getAllJobsData.filter((job) => {
@@ -48,13 +64,17 @@ function SearchResults() {
       setFilteredJob(filteredSearchedJobs);
       setIsLoading(false);
     }, 5000);
-  }, [getAllJobsData, searchKeyword]);
-
-  // const handleSourceFilters = ({ adzuna, remotive, JSearch }) => {
-  //   setAdzunaJobOnly(adzuna);
-  //   setRemotiveJobOnly(remotive);
-  //   setJSearchJobOnly(JSearch);
-  // };
+  }, [
+    getAllJobsData,
+    searchKeyword,
+    JSearchJobOnly,
+    adzunaJobOnly,
+    fullTimeOnly,
+    onsiteOnly,
+    partTimeOnly,
+    remoteOnly,
+    remotiveJobOnly,
+  ]);
 
   useEffect(() => {
     const fetchData = async () => {
