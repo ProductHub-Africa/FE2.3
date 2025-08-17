@@ -6,6 +6,7 @@ import SideBar from "../components/SideBar.jsx";
 import useJobApiData from "../store/GeneralApi";
 import NavBar from "../components/NavBar.jsx";
 import JobLoader from "../components/JobLoader.jsx";
+import "../assets/css/SearchResults.css";
 
 function SearchResults() {
   const [adzunaJobOnly, setAdzunaJobOnly] = useState(false);
@@ -13,7 +14,7 @@ function SearchResults() {
   const [JSearchJobOnly, setJSearchJobOnly] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [remoteOnly, setRemoteOnly] = useState(false);
-  const [onsiteOnly, setOnsiteOnly] = useState(false);
+  const [contractOnly, setContractOnly] = useState(false);
   const [fullTimeOnly, setFullTimeOnly] = useState(false);
   const [partTimeOnly, setPartTimeOnly] = useState(false);
   const [filteredJob, setFilteredJob] = useState([]);
@@ -50,13 +51,31 @@ function SearchResults() {
           (JSearchJobOnly && job.source === "JSearch") ||
           (!adzunaJobOnly && !remotiveJobOnly);
 
-        const type = job.jobType?.toLowerCase() || "";
+        // const jobTypeMatches =
+        //   (fullTimeOnly && job.jobType.includes("full")) ||
+        //   (partTimeOnly && job.jobType.includes("part")) ||
+        //   (remoteOnly && job.jobType.includes("remote")) ||
+        //   (contractOnly && job.jobType.includes("contract")) ||
+        //   (!fullTimeOnly && !partTimeOnly);
+
+        const jobTypeFilters =
+          [fullTimeOnly, partTimeOnly, remoteOnly, contractOnly].filter(Boolean)
+            .length > 0;
 
         const jobTypeMatches =
-          (!remoteOnly || type.includes("remote")) &&
-          (!onsiteOnly || (!type.includes("remote") && type !== "")) &&
-          (!fullTimeOnly || type.includes("full")) &&
-          (!partTimeOnly || type.includes("part"));
+          (fullTimeOnly &&
+            typeof job.jobType === "string" &&
+            job.jobType.includes("full")) ||
+          (partTimeOnly &&
+            typeof job.jobType === "string" &&
+            job.jobType.includes("part")) ||
+          (remoteOnly &&
+            typeof job.jobType === "string" &&
+            job.jobType.includes("remote")) ||
+          (contractOnly &&
+            typeof job.jobType === "string" &&
+            job.jobType.includes("contract")) ||
+          !jobTypeFilters; // Only show all if no job type filter is active
 
         return matchesTitle && sourceMatches && jobTypeMatches;
       });
@@ -70,7 +89,7 @@ function SearchResults() {
     JSearchJobOnly,
     adzunaJobOnly,
     fullTimeOnly,
-    onsiteOnly,
+    contractOnly,
     partTimeOnly,
     remoteOnly,
     remotiveJobOnly,
@@ -96,14 +115,14 @@ function SearchResults() {
       {/* Main Area */}
       <main style={{ marginTop: "80px", minHeight: "100vh" }}>
         <div className="container">
-          <div className="d-flex gap-5">
+          <div className="d-sm-flex  gap-5">
             <SideBar
               filters={{
                 adzuna: adzunaJobOnly,
                 remotive: remotiveJobOnly,
                 JSearch: JSearchJobOnly,
                 remote: remoteOnly,
-                onsite: onsiteOnly,
+                contract: contractOnly,
                 fullTime: fullTimeOnly,
                 partTime: partTimeOnly,
               }}
@@ -112,16 +131,12 @@ function SearchResults() {
                 setRemotiveJobOnly(updatedFilters.remotive);
                 setJSearchJobOnly(updatedFilters.JSearch);
                 setRemoteOnly(updatedFilters.remote);
-                setOnsiteOnly(updatedFilters.onsite);
+                setContractOnly(updatedFilters.contract);
                 setFullTimeOnly(updatedFilters.fullTime);
                 setPartTimeOnly(updatedFilters.partTime);
               }}
             />
-            <section
-              style={{
-                width: "calc(100% - 300px)",
-              }}
-            >
+            <section className="long-job-card-container">
               {/* <NoJobAvail /> */}
               <LongJobCard
                 filteredJobs={filteredJob}
@@ -129,6 +144,10 @@ function SearchResults() {
                 remotiveJobOnly={remotiveJobOnly}
                 adzunaJobOnly={adzunaJobOnly}
                 JSearchJobOnly={JSearchJobOnly}
+                remoteOnly={remoteOnly}
+                fullTimeOnly={fullTimeOnly}
+                partTimeOnly={partTimeOnly}
+                contractOnly={contractOnly}
               />
             </section>
           </div>

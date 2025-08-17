@@ -1,0 +1,308 @@
+{
+  "count": 845050,
+  "__CLASS__": "Adzuna::API::Response::JobSearchResults",
+  "mean": 41408.7,
+  "results": [
+    {
+      "salary_is_predicted": "0",
+      "salary_max": 35000,
+      "salary_min": 32000,
+      "id": "5295592307",
+      "category": {
+        "tag": "sales-jobs",
+        "label": "Sales Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicU5PUGNGOWY4QkdQMXZTbmJUY1F3QSIsImkiOiI1Mjk1NTkyMzA3In0.jb81eglr_5tSAEyJGzpPtOgR7PCqLZPB7DA_iSM2aB4",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5295592307?utm_medium=api&utm_source=c4840665",
+      "description": "Job Title: Business Development Executive - German Speaker Salary: \u00a332,000 - \u00a335,000 / year Location: London  Remote About us: Adzuna is an established and profitable job search engine that lists every job, everywhere. Launched in 2011, we help over 10 million visitors a month in 19 markets find better, more fulfilling jobs. Governments and the world\u2019s largest companies trust us for our unique global audience and jobs market intelligence, and we walk the walk on things like Salary Transparency \u2026",
+      "longitude": -0.139134,
+      "created": "2025-07-10T11:36:45Z",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "London, UK",
+        "area": ["UK", "London"]
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Adzuna"
+      },
+      "title": "Business Development Executive - German Speaker",
+      "contract_time": "full_time",
+      "latitude": 51.503378
+    },
+    {
+      "contract_time": "full_time",
+      "contract_type": "permanent",
+      "latitude": 53.578499,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Partou"
+      },
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Bolton, Greater Manchester",
+        "area": ["UK", "North West England", "Greater Manchester", "Bolton"]
+      },
+      "title": "Nursery Manager",
+      "longitude": -2.42992,
+      "created": "2025-07-08T19:55:04Z",
+      "id": "5292523192",
+      "salary_min": 45000,
+      "category": {
+        "tag": "teaching-jobs",
+        "label": "Teaching Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_is_predicted": "0",
+      "salary_max": 45000,
+      "description": "Join Partou, where we put children in the lead! We're seeking a dedicated and passionate Nursery Manager to join us at Partou Playdays. As a nursery manager, you'll have the opportunity to create a safe and supportive environment for children and families. At Partou, we are committed to providing exceptional care, compassion, and continuous learning. These values guide our interactions with children, families, and team members, ensuring an encouraging and supportive environment for all. Some of\u2026",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTI5MjUyMzE5MiIsInMiOiJxTk9QY0Y5ZjhCR1AxdlNuYlRjUXdBIn0.H7JiKAFc4l-QoGr9yg66NmhkUtKSsxzaL0vHbMqFWVI",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5292523192?utm_medium=api&utm_source=c4840665"
+    },
+    {
+      "company": {
+        "display_name": "Partou",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "location": {
+        "area": ["UK", "Eastern England", "Hertfordshire", "Rickmansworth"],
+        "display_name": "Rickmansworth, Hertfordshire",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "title": "Nursery Chef",
+      "contract_time": "part_time",
+      "contract_type": "permanent",
+      "latitude": 51.638802,
+      "id": "5258224193",
+      "category": {
+        "label": "Hospitality & Catering Jobs",
+        "tag": "hospitality-catering-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_min": 20701,
+      "salary_is_predicted": "0",
+      "salary_max": 20701,
+      "description": "We're on the lookout for an enthusiastic chef to become a part of our fantastic team at Shepherd's Lane, 30 hours per week, Monday to Friday and a competitive salary You'll have the rewarding role of preparing delicious, nutritionally balanced meals for our children, never forgetting to cater to any specific dietary needs or allergies. Your responsibilities will include: Managing the nursery kitchen with efficiency Keeping track of food supplies Upholding the highest standards of cleanliness en\u2026",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5258224193?utm_medium=api&utm_source=c4840665",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTI1ODIyNDE5MyIsInMiOiJxTk9QY0Y5ZjhCR1AxdlNuYlRjUXdBIn0.OUmAqFIH7_MvWet5VVlsmQqac7VFLuqizowjYQwDkMY",
+      "longitude": -0.46919,
+      "created": "2025-06-19T16:06:06Z"
+    },
+    {
+      "longitude": -0.46919,
+      "created": "2025-07-03T17:48:00Z",
+      "salary_min": 40000,
+      "id": "5282136428",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Teaching Jobs",
+        "tag": "teaching-jobs"
+      },
+      "salary_is_predicted": "0",
+      "salary_max": 40000,
+      "description": "Join Partou, where we put children in the lead! We're seeking a dedicated and passionate Nursery Manager to join us at Partou Shepherd's Lane . As a Nursery manager, you'll have the opportunity to create a safe and supportive environment for children and families. At Partou, we are committed to providing exceptional care, compassion, and continuous learning. These values guide our interactions with children, families, and team members, ensuring an encouraging and supportive environment for all.\u2026",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5282136428?utm_medium=api&utm_source=c4840665",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTI4MjEzNjQyOCIsInMiOiJxTk9QY0Y5ZjhCR1AxdlNuYlRjUXdBIn0.TV-zCyfg0GV3tIgnaVhi_jyzdVfmrDxAFAGHm9ZpPx8",
+      "contract_time": "full_time",
+      "contract_type": "permanent",
+      "latitude": 51.638802,
+      "company": {
+        "display_name": "Partou",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "location": {
+        "area": ["UK", "Eastern England", "Hertfordshire", "Rickmansworth"],
+        "display_name": "Rickmansworth, Hertfordshire",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "title": "Nursery Manager"
+    },
+    {
+      "contract_time": "full_time",
+      "contract_type": "permanent",
+      "latitude": 53.757702,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Partou"
+      },
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Preston, Lancashire",
+        "area": ["UK", "North West England", "Lancashire", "Preston"]
+      },
+      "title": "Room Leader",
+      "longitude": -2.70344,
+      "created": "2025-07-09T19:55:59Z",
+      "id": "5294088952",
+      "category": {
+        "tag": "teaching-jobs",
+        "label": "Teaching Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_min": 28400,
+      "salary_max": 28400,
+      "salary_is_predicted": "0",
+      "description": "Join Partou, where children are the leaders! We are currently recruiting for a Room Leader at Partou Bluebells for 40 hours per week and a competitive salary of \u00a328,400. A fantastic opportunity for a nursery practitioner to take the first step on their development journey. Some of the benefits of working as part of the Partou Family: Genuine opportunities for career progression Access to professional training Pension scheme 60% childcare discount, Enhanced maternity/paternity leave, Rewards and\u2026",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicU5PUGNGOWY4QkdQMXZTbmJUY1F3QSIsImkiOiI1Mjk0MDg4OTUyIn0.qnopB6xDbG_UBhs2KIWgvu3RrTxUDQqv5HOIU4vi1V8",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5294088952?utm_medium=api&utm_source=c4840665"
+    },
+    {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTI5NTU5MjMyMyIsInMiOiJxTk9QY0Y5ZjhCR1AxdlNuYlRjUXdBIn0.zVpoHuizLlragT_uT6W1X9sDTdEiH63PX_mblOv3VQw",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5295592323?utm_medium=api&utm_source=c4840665",
+      "description": "Job Title: Business Development Executive - German Speaker Salary: \u00a332,000 - \u00a335,000 / year Location: London  Remote About us: Adzuna is an established and profitable job search engine that lists every job, everywhere. Launched in 2011, we help over 10 million visitors a month in 19 markets find better, more fulfilling jobs. Governments and the world\u2019s largest companies trust us for our unique global audience and jobs market intelligence, and we walk the walk on things like Salary Transparency \u2026",
+      "title": "Business Development Executive - German Speaker",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": ["UK"],
+        "display_name": "UK"
+      },
+      "salary_is_predicted": "0",
+      "salary_max": 35000,
+      "salary_min": 32000,
+      "id": "5295592323",
+      "category": {
+        "tag": "sales-jobs",
+        "label": "Sales Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Adzuna"
+      },
+      "created": "2025-07-10T11:36:45Z",
+      "contract_time": "full_time"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTI5NTU5MjMxNCIsInMiOiJxTk9QY0Y5ZjhCR1AxdlNuYlRjUXdBIn0.mbffsRJBTOt7ZRUVsGVBsHnk5Vc4ry5JzyGiYGT37a8",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5295592314?utm_medium=api&utm_source=c4840665",
+      "description": "Job Title: Commercial Manager - German Speaker Location: London / Remote Salary: \u00a355,000 - \u00a365,000 (fixed) This position does not include OTE About us: Adzuna is an established and profitable job search engine that lists every job, everywhere. Launched in 2011, we help over 10 million visitors a month in 19 markets find better, more fulfilling jobs. Governments and the world\u2019s largest companies trust us for our unique global audience and jobs market intelligence, and we walk the walk on things \u2026",
+      "salary_max": 65000,
+      "salary_is_predicted": "0",
+      "id": "5295592314",
+      "category": {
+        "tag": "sales-jobs",
+        "label": "Sales Jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_min": 55000,
+      "created": "2025-07-10T11:36:45Z",
+      "longitude": -0.139134,
+      "title": "Commercial Manager - German Speaker",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": ["UK", "London"],
+        "display_name": "London, UK"
+      },
+      "company": {
+        "display_name": "Adzuna",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "latitude": 51.503378,
+      "contract_time": "full_time"
+    },
+    {
+      "longitude": -2.11635,
+      "created": "2025-07-03T17:48:01Z",
+      "id": "5282136463",
+      "category": {
+        "label": "Teaching Jobs",
+        "tag": "teaching-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_min": 28400,
+      "salary_is_predicted": "0",
+      "salary_max": 28400,
+      "description": "Join Partou, where children are the leaders! We are currently recruiting for a Room Leader at Smiley's for 40 hours per week and a competitive salary of \u00a313.65 per hour. A fantastic opportunity for a nursery practitioner to take the first step on their development journey. Some of the benefits of working as part of the Partou Family: Genuine opportunities for career progression Access to professional training Pension scheme 60% childcare discount, Enhanced maternity/paternity leave, Rewards and\u2026",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5282136463?utm_medium=api&utm_source=c4840665",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicU5PUGNGOWY4QkdQMXZTbmJUY1F3QSIsImkiOiI1MjgyMTM2NDYzIn0.LJI9khbeLquwGCo1Fr-e5PXAeeCDYDpmpZWTozZpeeU",
+      "contract_time": "full_time",
+      "contract_type": "permanent",
+      "latitude": 52.805099,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Partou"
+      },
+      "location": {
+        "area": ["UK", "West Midlands", "Staffordshire", "Stafford"],
+        "display_name": "Stafford, Staffordshire",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "title": "Room Leader"
+    },
+    {
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": ["UK", "South East England", "Berkshire", "Slough"],
+        "display_name": "Slough, Berkshire"
+      },
+      "company": {
+        "display_name": "Partou",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Early Years Educator L3",
+      "contract_time": "full_time",
+      "latitude": 51.5093,
+      "contract_type": "permanent",
+      "salary_is_predicted": "0",
+      "salary_max": 28600,
+      "salary_min": 28600,
+      "id": "5258224179",
+      "category": {
+        "label": "Teaching Jobs",
+        "tag": "teaching-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5258224179?utm_medium=api&utm_source=c4840665",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicU5PUGNGOWY4QkdQMXZTbmJUY1F3QSIsImkiOiI1MjU4MjI0MTc5In0.KPlV-2eiMt9tQGXH0DwOKxg0ktUF4wO8nt26bLLLYlQ",
+      "description": "Join Partou, where we put children in the lead! We're seeking dedicated and qualified Level 3 early years practitioners to join our Cherry Trees family! Full / part-time 40 and 20 hours a week and a competitive salary starting from \u00a313.75 per hour At Partou, we are committed to providing exceptional care, compassion, and continuous learning. These values guide our interactions with children, families, and team members, ensuring a nurturing and supportive environment. Some of the benefits of wor\u2026",
+      "longitude": -0.595448,
+      "created": "2025-06-19T16:06:00Z"
+    },
+    {
+      "description": "Join Partou, where we put children in the lead! We're seeking dedicated and qualified Level 3 early years practitioners to join our Partou Footprints family! 40 hours a week and a competitive salary pof \u00a327000 per hour. At Partou, we are committed to providing exceptional care, compassion, and continuous learning. These values guide our interactions with children, families, and team members, ensuring a nurturing and supportive environment. Some of the benefits of working as part of the Partou F\u2026",
+      "redirect_url": "https://www.adzuna.co.uk/jobs/details/5292523188?utm_medium=api&utm_source=c4840665",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicU5PUGNGOWY4QkdQMXZTbmJUY1F3QSIsImkiOiI1MjkyNTIzMTg4In0.RulPPTzYtD4pZuHCUmS3wNI6YjXlbuzaKlcVnUNliSw",
+      "salary_min": 27000,
+      "id": "5292523188",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "teaching-jobs",
+        "label": "Teaching Jobs"
+      },
+      "salary_is_predicted": "0",
+      "salary_max": 27000,
+      "created": "2025-07-08T19:55:04Z",
+      "longitude": -2.49648,
+      "title": "Early Years Educator L3",
+      "company": {
+        "display_name": "Partou",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "location": {
+        "area": [
+          "UK",
+          "North West England",
+          "Greater Manchester",
+          "Manchester",
+          "Atherton"
+        ],
+        "display_name": "Atherton, Manchester",
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "contract_type": "permanent",
+      "latitude": 53.523499,
+      "contract_time": "full_time"
+    }
+  ]
+}

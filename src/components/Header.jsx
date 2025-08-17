@@ -23,7 +23,7 @@ function Header({ searchTerms }) {
               style={{ height: "576px" }}
             >
               <div className="content-left">
-                <h1>Curated jobs from all around the glob</h1>
+                <h1>Curated jobs from all around the globe</h1>
                 <p>Search, like, get hired faster and smarter</p>
 
                 <form onSubmit={handleSubmit(onSubmit)}>

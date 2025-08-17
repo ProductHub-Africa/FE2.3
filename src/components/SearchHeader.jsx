@@ -9,7 +9,7 @@ function SearchHeader() {
           style={{ height: "332px" }}
         >
           <div className="content-left" style={{ width: "400px" }}>
-            <h1>Curated jobs from all around the glob</h1>
+            <h1>Curated jobs from all around the globe</h1>
             <p>Search, like, get hired faster and smarter</p>
           </div>
         </div>

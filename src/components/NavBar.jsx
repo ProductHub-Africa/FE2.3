@@ -10,7 +10,7 @@ const NavBar = () => {
             <h1 className="logo">Jobwhiz</h1>
           </Link>
           <div className="nav-icon-profile d-flex align-items-center">
-            <div className="nav-icon-wrapper d-flex align-items-center">
+            {/* <div className="nav-icon-wrapper d-flex align-items-center">
               <div className="notification-icon me-3">
                 <svg
                   width="24"
@@ -59,9 +59,16 @@ const NavBar = () => {
                   />
                 </svg>
               </div>
+            </div> */}
+            <div className="nav-profile">
+              <a href="#recent-job" className="m-0 px-3 nav-link">
+                Recent Jobs
+              </a>
             </div>
             <div className="nav-profile">
-              <p className="m-0 px-3">Employers</p>
+              <a href="#footer" className="m-0 px-3 nav-link">
+                Contact
+              </a>
             </div>
           </div>
         </div>

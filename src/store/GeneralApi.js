@@ -63,7 +63,6 @@ const useJobApiData = () => {
       }
       const data = await response.json();
       setJSearchJobData(data.data);
-      console.log("JSearch Data", data.data);
       return data.data || [];
     } catch (error) {
       console.error("Error fetching JSearch job data:", error);
@@ -78,8 +77,8 @@ const useJobApiData = () => {
       companyName: job.company_name,
       companyLogo: job.company_logo,
       applyUrl: job.url,
-      jobLocation: job.candidate_required_location || "Remote",
-      jobType: job.job_type || "Full-time",
+      jobLocation: job.candidate_required_location,
+      jobType: job.job_type,
       jobSalary: job.salary || "Not specified",
       datePosted: job.publication_date,
       source: "Remotive",
@@ -93,8 +92,8 @@ const useJobApiData = () => {
       companyName: job.company.display_name,
       companyLogo: "",
       applyUrl: job.redirect_url,
-      jobLocation: job.location.display_name || "Remote",
-      jobType: job.contract_type || "Full-time",
+      jobLocation: job.location.display_name,
+      jobType: job.contract_time,
       jobSalary: job.salary_min
         ? `£${job.salary_min} - £${job.salary_max}`
         : "Not specified",

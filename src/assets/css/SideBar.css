@@ -4,6 +4,23 @@
   background-color: rgba(247, 247, 247, 1);
   padding: 20px 10px 20px 20px;
   height: max-content;
+  position: sticky;
+  top: 80px;
+}
+
+@media screen and (max-width: 576px) {
+  #side-bar {
+    position: static;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .job-type-container,
+  .job-source-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 #side-bar > h4 {

@@ -10,16 +10,77 @@ function LongJobCard({
   remotiveJobOnly,
   adzunaJobOnly,
   JSearchJobOnly,
+  remoteOnly,
+  fullTimeOnly,
+  partTimeOnly,
+  contractOnly,
 }) {
   const remotiveJobs = filteredJobs.filter((job) => job.source === "Remotive");
   const adzunaJobs = filteredJobs.filter((job) => job.source === "Adzuna");
   const JSearchJobs = filteredJobs.filter((job) => job.source === "JSearch");
+  // const remoteJobs = filteredJobs.filter(
+  //   (job) =>
+  //     job.jobType?.toLowerCase().includes("remote") || job.isRemote === true
+  // );
+  const remoteJobs = filteredJobs.filter((job) => job.jobType === "remote");
+  const fullTimeJobs = filteredJobs.filter(
+    (job) =>
+      job.jobType === "full_time" ||
+      job.jobType === "full" ||
+      job.jobType === "permanent"
+  );
+  const partTimeJobs = filteredJobs.filter(
+    (job) => job.jobType === "part_time" || job.jobType === "part"
+  );
+  const contractJobs = filteredJobs.filter((job) => {
+    if (job.jobType === "contract") {
+      console.log("Contract job found:", job);
+      return job;
+    }
+  });
+
+  // const contractJobs = filteredJobs.filter(
+  //   (job) => job.jobType && job.jobType.toLowerCase().includes("contract")
+  // );
+
+  // const fullTimeJobs = filteredJobs.filter((job) => {
+  //   job.jobType?.toLowerCase().includes("full_time");
+  // });
+
+  //   Job type:
+  // contract
+  // full_time / permanent
+  // part_time
+  // freelance
+  // internship
+
   useEffect(() => {
     getAllJobs();
   }, []);
 
   return (
     <>
+      {/* {remoteJob} */}
+      {fullTimeOnly && fullTimeJobs.length === 0 && (
+        <p className="text-danger fw-bold">
+          No Full time jobs found matching your search criteria.
+        </p>
+      )}
+      {partTimeOnly && partTimeJobs.length === 0 && (
+        <p className="text-danger fw-bold">
+          No Part time jobs found matching your search criteria.
+        </p>
+      )}
+      {remoteOnly && remoteJobs.length === 0 && (
+        <p className="text-danger fw-bold">
+          No remote jobs found matching your search criteria.
+        </p>
+      )}
+      {contractOnly && contractJobs.length === 0 && (
+        <p className="text-danger fw-bold">
+          No jobs found from Contract with the search.
+        </p>
+      )}
       {remotiveJobOnly && remotiveJobs.length === 0 && (
         <p className="text-danger fw-bold">
           No jobs found from Remotive with the search.
@@ -59,7 +120,7 @@ function LongJobCard({
             </div>
 
             <div className="bottom-content mt-2 d-flex align-items-center justify-content-between">
-              <div className="d-flex align-items-center">
+              <div className="d-block d-sm-flex align-items-center">
                 <div className="location">
                   <svg
                     width="24"
@@ -103,7 +164,11 @@ function LongJobCard({
                     />
                   </svg>
                   <span className="ms-2">
-                    {item.jobType === "full_time" ? "Full Time" : item.jobType}
+                    {item.jobType === "full_time"
+                      ? "Full Time"
+                      : item.jobType === "part_time"
+                      ? "Part Time"
+                      : item.jobType}
                   </span>
                 </div>
                 <div className="job-salary">

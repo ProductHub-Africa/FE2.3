@@ -5,6 +5,9 @@
   width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+}
+
 .company-name-and-time > .company-name span {
   font-size: 14px;
   font-family: var(--font-inter);
@@ -32,6 +35,13 @@
 .bottom-content .job-type,
 .job-salary {
   margin-left: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .bottom-content .job-type,
+  .job-salary {
+    margin-left: 0;
+  }
 }
 
 .bottom-content .location > span,

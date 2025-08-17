@@ -38,7 +38,8 @@ function RecentJob({ allJobs, loader }) {
             <div className="recent-job-text">
               <h1>Recent jobs available</h1>
               <p>
-                At eu lobortis pretium tincidunt amet lacus ut aenean aliquet
+                Fresh listings from trusted sources, updated daily for quick
+                action.
               </p>
             </div>
             <div className="view-all-link">
@@ -47,8 +48,24 @@ function RecentJob({ allJobs, loader }) {
           </div>
           {/* {recentJob} */}
           {loader && (
-            <div className="spinner-border text-info" role="status">
-              <span className="visually-hidden">Loading...</span>
+            <div className="loader">
+              <div className="spinner-border text-info" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+
+              <div className="mt-2">
+                <h5 className="fw-bold">
+                  Taking time to load 🤔, you might to consider&nbsp;
+                  <a
+                    href="#"
+                    className="reload-text"
+                    onClick={() => window.location.reload()}
+                  >
+                    Reloading
+                  </a>
+                  &nbsp;the page
+                </h5>
+              </div>
             </div>
           )}
           <div className="row">

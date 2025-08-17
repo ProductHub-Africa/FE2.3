@@ -1,0 +1,9 @@
+.long-job-card-container {
+  width: calc(100% - 300px);
+}
+
+@media screen and (max-width: 576px) {
+  .long-job-card-container {
+    width: 100%;
+  }
+}

@@ -13,9 +13,10 @@ function Footer() {
               <div className="job-whiz-footer">
                 <h1>Jobwhiz</h1>
                 <p>
-                  Quis enim pellentesque viverra tellus eget malesuada
-                  facilisis. Congue nibh vivamus aliquet nunc mauris dui nullam
-                  et.
+                  JobWhiz is your lightning-fast job scout—bringing together
+                  fresh remote and local listings from top platforms like
+                  Remotive, JSearch, Adzuna, and Jooble into one clean,
+                  minimalist dashboard
                 </p>
               </div>
             </div>

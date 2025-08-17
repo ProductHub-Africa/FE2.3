@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import JobCategories from "./components/JobCategories";
+// import JobCategories from "./components/JobCategories";
 import NavBar from "./components/NavBar";
 import RecentJob from "./components/RecentJob";
 // import StartJob from "./components/StartJob";
@@ -52,7 +52,7 @@ function App() {
       <NavBar />
       <Header searchTerms={handleSearchTerms} />
       <RecentJob allJobs={getAllJobsData} loader={isLoading} />
-      <JobCategories />
+      {/* <JobCategories /> */}
       {/* <StartJob /> */}
       <Footer />
     </>
